@@ -11,7 +11,7 @@ const ThLotory = async function (req, res) {
   const TmpjactpotDate = split(" ", contentSnippetTranform[0][0])
   const arr = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
   const jackpotDate = TmpjactpotDate[1] + "-" + arr.indexOf(TmpjactpotDate[2]) + "-" + TmpjactpotDate[3]
-  const jackpotDate = TmpjactpotDate[1] + "-" + TmpjactpotDate[2] + "-" + TmpjactpotDate[3]
+  const jackpotDateTh = TmpjactpotDate[1] + "-" + TmpjactpotDate[2] + "-" + TmpjactpotDate[3]
   const tree_digit_prev = split(" ", contentSnippetTranform[13][0])
   const tree_digit_end = split(" ", contentSnippetTranform[14][0])
 
@@ -24,7 +24,7 @@ const ThLotory = async function (req, res) {
     tree_digit_end: tree_digit_end,
     pubDate: feed.items[0].pubDate,
     jackpotDate: jackpotDate,
-    jackpotDateTh: jackpotDate
+    jackpotDateTh: jackpotDateTh
   });
 
 }
