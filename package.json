@@ -1,15 +1,14 @@
 {
   "name": "lotoryapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "api lottory thailand",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "jsdom": "^11.12.0",
     "rss-parser": "^3.4.3",
-    "string-split": "^0.3.1",
-    "striptags": "^3.1.1"
+    "string-split": "^0.3.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
